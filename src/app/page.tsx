@@ -1,15 +1,19 @@
-export default function HomePage() {
-  return (
-    <main className="min-h-screen bg-navy-800 text-ink-primary">
-      <section className="px-8 py-32">
-        <h1 className="text-display-2xl font-serif">
-          Sapphire Juris
-        </h1>
+import { Hero }        from "@/components/hero/Hero";
+import AboutPreview   from "@/components/sections/AboutPreview";
+import PracticeAreas  from "@/components/sections/PracticeAreas";
+import Philosophy     from "@/components/sections/Philosophy";
+import Testimonials   from "@/components/sections/Testimonials";
+import ContactCTA     from "@/components/sections/ContactCTA";
 
-        <p className="mt-6 text-ui-lg text-ink-secondary max-w-2xl">
-          Premium law firm website under development.
-        </p>
-      </section>
-    </main>
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <AboutPreview />
+      <PracticeAreas />
+      <Philosophy />
+      <Testimonials />
+      <ContactCTA />
+    </>
   );
 }

@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* ─────────────────────────────────────────────────────────
    CSS CUSTOM PROPERTIES
    ───────────────────────────────────────────────────────── */
 :root {
-  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-cormorant: "Cinzel", Georgia, serif;
   --font-dm-sans:   "DM Sans", system-ui, sans-serif;
 
   --color-navy-950: #040D15;
@@ -50,6 +46,11 @@
    ───────────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 html {
@@ -353,3 +354,10 @@ body {
 ::-webkit-scrollbar-track { background: var(--color-navy-900); }
 ::-webkit-scrollbar-thumb { background: var(--border-medium); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-gold-400); }
+
+.footer-link {
+  transition: color 200ms var(--ease-luxury);
+}
+.footer-link:hover {
+  color: var(--color-gold-400) !important;
+}
