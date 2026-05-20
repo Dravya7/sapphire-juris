@@ -393,48 +393,33 @@ export default function AboutPreview() {
               gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))",
             }}
           >
-            {/* Photo placeholder */}
+            {/* Founder portrait */}
             <div
               style={{
-                position:        "relative",
-                minHeight:       "clamp(280px, 40vw, 460px)",
-                backgroundColor: "#07111E",
-                display:         "flex",
-                alignItems:      "center",
-                justifyContent:  "center",
-                borderRight:     "1px solid rgba(201,168,76,0.08)",
+                position:    "relative",
+                minHeight:   "clamp(320px, 45vw, 520px)",
+                borderRight: "1px solid rgba(201,168,76,0.08)",
+                overflow:    "hidden",
               }}
             >
-              <div style={{ textAlign: "center" }}>
-                <div
-                  style={{
-                    width:           80,
-                    height:          80,
-                    borderRadius:    "50%",
-                    border:          "1px solid rgba(201,168,76,0.2)",
-                    display:         "flex",
-                    alignItems:      "center",
-                    justifyContent:  "center",
-                    margin:          "0 auto 1rem",
-                  }}
-                >
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.3)" strokeWidth="1.2" strokeLinecap="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                </div>
-                <p
-                  style={{
-                    fontFamily:    "var(--font-dm-sans)",
-                    fontSize:      "0.6rem",
-                    letterSpacing: "0.16em",
-                    textTransform: "uppercase",
-                    color:         "rgba(201,168,76,0.3)",
-                  }}
-                >
-                  Photo coming soon
-                </p>
-              </div>
+              <div
+                style={{
+                  position:           "absolute",
+                  inset:              0,
+                  backgroundImage:    "url('/images/founder-dr-saket-vyas.jpg')",
+                  backgroundSize:     "cover",
+                  backgroundPosition: "center top",
+                }}
+              />
+              {/* Subtle bottom gradient for blending */}
+              <div
+                aria-hidden="true"
+                style={{
+                  position:   "absolute",
+                  inset:      0,
+                  background: "linear-gradient(to top, rgba(7,17,30,0.45) 0%, transparent 55%)",
+                }}
+              />
             </div>
 
             {/* Note content */}
@@ -478,27 +463,47 @@ export default function AboutPreview() {
                 }}
               />
 
-              {/* Placeholder body */}
               <p
                 style={{
                   fontFamily:   "var(--font-dm-sans)",
                   fontSize:     "clamp(0.875rem, 1.2vw, 0.9375rem)",
                   lineHeight:   1.85,
-                  color:        "rgba(122,143,166,0.85)",
+                  color:        "rgba(122,143,166,0.9)",
                   marginBottom: "1.25rem",
                 }}
               >
-                The founder&apos;s message will be added here. This section is reserved for a personal note from the founding advocate of Sapphire Juris — sharing the vision, values, and commitment that define the firm.
+                At SAPPHIRE JURIS – Advocates &amp; Legal Consultants, we believe
+                that law is not merely about litigation — it is about trust,
+                responsibility, and delivering meaningful solutions with integrity.
+              </p>
+              <p
+                style={{
+                  fontFamily:   "var(--font-dm-sans)",
+                  fontSize:     "clamp(0.875rem, 1.2vw, 0.9375rem)",
+                  lineHeight:   1.85,
+                  color:        "rgba(122,143,166,0.82)",
+                  marginBottom: "1.25rem",
+                }}
+              >
+                Our firm is founded on the principles of professionalism, ethical
+                advocacy, and client-centric service. With a commitment to excellence,
+                we strive to provide strategic and effective legal guidance across
+                diverse areas of practice while maintaining the highest standards of
+                fairness and dedication.
               </p>
               <p
                 style={{
                   fontFamily: "var(--font-dm-sans)",
                   fontSize:   "clamp(0.875rem, 1.2vw, 0.9375rem)",
                   lineHeight: 1.85,
-                  color:      "rgba(122,143,166,0.7)",
+                  color:      "rgba(122,143,166,0.75)",
                 }}
               >
-                Content coming soon.
+                At Sapphire Juris, we combine legal insight with a modern approach
+                to ensure that every client receives clear, practical, and
+                result-oriented representation. As the legal landscape evolves, our
+                commitment to justice, integrity, and excellence remains unwavering.
+                We look forward to serving you with trust and dedication.
               </p>
 
               {/* Signature block */}
@@ -542,7 +547,7 @@ export default function AboutPreview() {
                     color:         "rgba(201,168,76,0.4)",
                   }}
                 >
-                  Founder, Sapphire Juris
+                  Founder &amp; Mentor — Sapphire Juris
                 </p>
               </div>
             </div>
