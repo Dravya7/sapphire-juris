@@ -217,7 +217,7 @@ export function Hero() {
 
       {/* ── Content ── */}
       <div
-        className="relative z-10 flex flex-col items-center justify-center text-center min-h-[100svh] px-6 sm:px-12 pb-28"
+        className="relative z-10 flex flex-col items-center justify-center text-center min-h-[100svh] px-6 sm:px-12 pt-[76px] pb-28"
       >
 
         {/* Shield logo mark */}
