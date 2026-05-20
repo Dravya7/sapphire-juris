@@ -50,6 +50,7 @@ export default function Footer() {
           {/* ── Brand column ─────────────────────────── */}
           <motion.div
             variants={motionVariants.fadeUp}
+            className="footer-brand"
             style={{ gridColumn: "span 2", minWidth: 0 }}
           >
             <Link

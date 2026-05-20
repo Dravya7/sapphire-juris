@@ -191,7 +191,7 @@ export default function AboutPage() {
               {[
                 { num: "500+",  label: "Cases Handled" },
                 { num: "98%",   label: "Client Satisfaction" },
-                { num: "10+",   label: "Years of Practice" },
+                { num: "35+",   label: "Years of Practice" },
                 { num: "15+",   label: "Practice Areas" },
               ].map((stat, i) => (
                 <div

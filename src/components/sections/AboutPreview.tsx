@@ -332,12 +332,12 @@ export default function AboutPreview() {
           {[
             { number: "500+",  label: "Cases Handled"       },
             { number: "98%",   label: "Client Satisfaction" },
-            { number: "10+",   label: "Years of Practice"   },
+            { number: "35+",   label: "Years of Practice"   },
             { number: "15+",   label: "Practice Areas"      },
           ].map((stat, i) => (
             <div
               key={stat.label}
-              className="flex flex-col"
+              className="stat-item flex flex-col"
               style={{
                 paddingInline: "clamp(1rem, 2vw, 2rem)",
                 paddingBlock:  "1rem",

@@ -104,6 +104,7 @@ export default function Testimonials() {
               <QuoteMark />
 
               <p
+                className="testimonial-quote"
                 style={{
                   fontFamily: "var(--font-cormorant)",
                   fontStyle: "italic",

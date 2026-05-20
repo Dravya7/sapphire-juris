@@ -152,6 +152,7 @@ export default function Philosophy() {
             <motion.div
               key={pillar.numeral}
               variants={motionVariants.staggerItem}
+              className="pillar-item"
               style={{
                 padding: "2.5rem clamp(1.5rem, 3vw, 2.5rem)",
                 borderLeft: i > 0 ? "1px solid rgba(201,168,76,0.12)" : "none",

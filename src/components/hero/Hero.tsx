@@ -240,6 +240,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.1, ease: [...EXPO] }}
         >
           <span
+            className="hero-firm-name"
             style={{
               display:       "block",
               fontFamily:    "var(--font-cormorant)",

@@ -360,3 +360,47 @@ body {
 .footer-link:hover {
   color: var(--color-gold-400) !important;
 }
+
+/* ─────────────────────────────────────────────────────────
+   MOBILE RESPONSIVE
+   ───────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  /* Philosophy pillars — swap left border for top border when stacked */
+  .pillar-item + .pillar-item {
+    border-left: none !important;
+    border-top: 1px solid rgba(201,168,76,0.12);
+  }
+
+  /* Stats strip — 2×2 grid, fix odd borders */
+  .stat-item:nth-child(odd) {
+    border-left: none !important;
+  }
+  .stat-item:nth-child(3),
+  .stat-item:nth-child(4) {
+    border-top: 1px solid rgba(201,168,76,0.08);
+  }
+
+  /* Footer brand column — don't span 2 on single-column */
+  .footer-brand {
+    grid-column: span 1 !important;
+  }
+
+  /* Hero firm name — prevent overflow on very small screens */
+  .hero-firm-name {
+    font-size: clamp(2.2rem, 12vw, 3rem) !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  /* Section headings — tighten on mobile */
+  .text-display-xl {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+  .text-display-lg {
+    font-size: clamp(1.65rem, 7vw, 2rem);
+  }
+
+  /* Testimonial cards — remove vw-based font size */
+  .testimonial-quote {
+    font-size: 1.0625rem !important;
+  }
+}
