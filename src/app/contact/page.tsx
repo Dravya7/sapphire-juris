@@ -63,18 +63,39 @@ const labelStyle = {
   marginBottom: "0.5rem",
 };
 
+const FORMSPREE_URL = "https://formspree.io/f/mwvzoklv";
+
 export default function ContactPage() {
   const [form, setForm] = useState<FormState>(INITIAL);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [focusedField, setFocusedField] = useState<string | null>(null);
 
   function handleChange(field: keyof FormState, value: string) {
     setForm((prev) => ({ ...prev, [field]: value }));
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again or call us directly.");
+      }
+    } catch {
+      setError("Unable to send. Please check your connection and try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   const getInputStyle = (field: string) => ({
@@ -341,8 +362,19 @@ export default function ContactPage() {
                   of seeking legal consultation and will be treated in strict confidence.
                 </p>
 
-                <button type="submit" className="btn-primary" style={{ alignSelf: "flex-start" }}>
-                  Submit Enquiry
+                {error && (
+                  <p style={{ fontSize: "0.8125rem", color: "#C97B7B", lineHeight: 1.6 }}>
+                    {error}
+                  </p>
+                )}
+
+                <button
+                  type="submit"
+                  className="btn-primary"
+                  disabled={submitting}
+                  style={{ alignSelf: "flex-start", opacity: submitting ? 0.7 : 1, cursor: submitting ? "wait" : "pointer" }}
+                >
+                  {submitting ? "Sending…" : "Submit Enquiry"}
                 </button>
               </form>
             )}
