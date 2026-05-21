@@ -10,6 +10,7 @@ import {
 import { practiceAreas } from "@/lib/design-tokens";
 import { motionVariants, viewportOptions } from "@/lib/utils";
 import ContactCTA from "@/components/sections/ContactCTA";
+import { PageHero } from "@/components/ui/PageHero";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   scale:        Scale,
@@ -80,6 +81,12 @@ const AREA_DETAILS: Record<string, { short: string; body: string }> = {
 export default function ExpertisePage() {
   return (
     <>
+      <PageHero
+        eyebrow="Areas of Practice"
+        heading={<>Comprehensive Counsel.{" "}<span style={{ color: "#C9A84C" }}>Every Domain.</span></>}
+        image="/images/expertise-bg.jpg"
+        brightness={0.2}
+      />
       {/* Banner */}
       <div
         style={{

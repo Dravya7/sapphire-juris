@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { firmInfo } from "@/lib/design-tokens";
+import { PageHero } from "@/components/ui/PageHero";
 import { motionVariants, viewportOptions } from "@/lib/utils";
 import ContactCTA from "@/components/sections/ContactCTA";
 
@@ -23,57 +24,11 @@ const EXTENDED_ADVOCATES = [
 export default function PeoplePage() {
   return (
     <>
-      {/* Banner */}
-      <div
-        style={{
-          backgroundColor: "#0A1520",
-          padding: "clamp(7rem, 12vw, 10rem) clamp(1.5rem, 5vw, 5rem) clamp(4rem, 6vw, 6rem)",
-          borderBottom: "1px solid rgba(201,168,76,0.12)",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        {/* Poster background */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage: "url('/images/poster.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-            filter: "brightness(0.15) saturate(0.5)",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "radial-gradient(ellipse 50% 70% at 30% 60%, rgba(201,168,76,0.04) 0%, transparent 70%)",
-            pointerEvents: "none",
-          }}
-        />
-        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative" }}>
-          <motion.p
-            variants={motionVariants.fadeUp}
-            initial="hidden"
-            animate="visible"
-            className="text-eyebrow"
-            style={{ marginBottom: "1rem" }}
-          >
-            Our People
-          </motion.p>
-          <motion.h1
-            variants={motionVariants.fadeUpDelay(0.08)}
-            initial="hidden"
-            animate="visible"
-            className="text-display-xl"
-            style={{ fontStyle: "italic", color: "#F5F0E8", maxWidth: 680 }}
-          >
-            The Advocates{" "}
-            <span style={{ color: "#C9A84C" }}>Behind Every Matter.</span>
-          </motion.h1>
-        </div>
-      </div>
+      <PageHero
+        eyebrow="Our People"
+        heading={<>The Advocates{" "}<span style={{ color: "#C9A84C" }}>Behind Every Matter.</span></>}
+        image="/images/people-bg.jpg"
+      />
 
       {/* Advocate profiles */}
       <section

@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { firmInfo } from "@/lib/design-tokens";
+import { PageHero } from "@/components/ui/PageHero";
 import { motionVariants, viewportOptions } from "@/lib/utils";
 
 interface FormState {
@@ -83,6 +84,12 @@ export default function ContactPage() {
 
   return (
     <>
+      <PageHero
+        eyebrow="Contact Us"
+        heading={<>Begin Your Matter.{" "}<span style={{ color: "#C9A84C" }}>Let&rsquo;s Talk.</span></>}
+        image="/images/contact-bg.jpg"
+        brightness={0.18}
+      />
       {/* Banner */}
       <div
         style={{
