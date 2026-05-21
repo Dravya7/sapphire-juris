@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     template: "%s | Sapphire Juris LLP®",
   },
   description: "Premium law firm in Indore, Madhya Pradesh. Where Law Meets Integrity.",
+  icons: {
+    icon:  "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export const viewport: Viewport = {
