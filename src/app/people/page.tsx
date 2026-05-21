@@ -25,7 +25,7 @@ const PEOPLE = [
     education:    "B.A., LL.B, LL.M",
     experience:   null,
     portrait:     null,
-    bio:          "Adv. Atharva Vyas leads the day-to-day practice of the firm as Managing Partner. His counsel extends to matters of corporate law, regulatory compliance, and civil litigation. He serves as Legal Advisor to Mahakal Mandir, Ujjain and PDPL Pharmaceutical, reflecting the trust placed in his strategic and transactional acumen.",
+    bio:          "Adv. Atharva Vyas leads the day-to-day practice of the firm as Managing Partner. He primarily deals in criminal and civil litigation, along with matters relating to SARFAESI and banking laws. He serves as Legal Advisor to Shri Mahakaleshwar Mandir and PDPL Pharmaceutical, reflecting the trust placed in his legal acumen and professional commitment.",
     focus:        ["Corporate & M&A", "Civil Litigation", "Regulatory & Compliance", "Arbitration & ADR"],
     notable:      ["Legal Advisor — Mahakal Mandir, Ujjain", "Legal Advisor — PDPL Pharmaceutical"],
     slug:         "atharva-vyas",
