@@ -181,9 +181,31 @@ export default function PeoplePage() {
                 variants={motionVariants.fadeUp}
                 style={{ order: i % 2 === 0 ? 1 : 0 }}
               >
-                <p className="text-eyebrow" style={{ marginBottom: "0.75rem" }}>
-                  {person.role}
-                </p>
+                {/* Role badge */}
+                <div
+                  style={{
+                    display:         "inline-flex",
+                    alignItems:      "center",
+                    padding:         "0.4rem 1rem",
+                    border:          "1px solid rgba(201,168,76,0.4)",
+                    borderRadius:    2,
+                    backgroundColor: "rgba(201,168,76,0.07)",
+                    marginBottom:    "1.25rem",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily:    "var(--font-dm-sans)",
+                      fontSize:      "0.75rem",
+                      fontWeight:    600,
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      color:         "#C9A84C",
+                    }}
+                  >
+                    {person.role}
+                  </span>
+                </div>
 
                 <h2
                   style={{
@@ -203,7 +225,7 @@ export default function PeoplePage() {
                     fontFamily: "var(--font-cormorant)",
                     fontStyle: "italic",
                     fontSize: "1rem",
-                    color: "#C9A84C",
+                    color: "rgba(201,168,76,0.7)",
                     marginBottom: "2rem",
                   }}
                 >
