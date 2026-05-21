@@ -90,47 +90,6 @@ export default function ContactPage() {
         image="/images/contact-bg.jpg"
         brightness={0.18}
       />
-      {/* Banner */}
-      <div
-        style={{
-          backgroundColor: "#0A1520",
-          padding: "clamp(7rem, 12vw, 10rem) clamp(1.5rem, 5vw, 5rem) clamp(4rem, 6vw, 6rem)",
-          borderBottom: "1px solid rgba(201,168,76,0.12)",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "radial-gradient(ellipse 50% 70% at 70% 40%, rgba(201,168,76,0.04) 0%, transparent 70%)",
-            pointerEvents: "none",
-          }}
-        />
-        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative" }}>
-          <motion.p
-            variants={motionVariants.fadeUp}
-            initial="hidden"
-            animate="visible"
-            className="text-eyebrow"
-            style={{ marginBottom: "1rem" }}
-          >
-            Contact the Firm
-          </motion.p>
-          <motion.h1
-            variants={motionVariants.fadeUpDelay(0.08)}
-            initial="hidden"
-            animate="visible"
-            className="text-display-xl"
-            style={{ fontStyle: "italic", color: "#F5F0E8", maxWidth: 640 }}
-          >
-            Begin with a{" "}
-            <span style={{ color: "#C9A84C" }}>Confidential Consultation.</span>
-          </motion.h1>
-        </div>
-      </div>
-
       {/* Main content */}
       <section
         style={{
