@@ -4,6 +4,7 @@ import { Cinzel, DM_Sans } from "next/font/google";
 import Navbar        from "@/components/navbar/Navbar";
 import Footer        from "@/components/footer/Footer";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
+import { Disclaimer }   from "@/components/ui/Disclaimer";
 import "./globals.css";
 
 const cormorant = Cinzel({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
       <body>
+        <Disclaimer />
         <SmoothScroll />
         <Navbar />
         <main id="main-content">
