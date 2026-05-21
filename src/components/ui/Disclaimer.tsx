@@ -11,14 +11,14 @@ export function Disclaimer() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const accepted = localStorage.getItem(STORAGE_KEY);
+      const accepted = sessionStorage.getItem(STORAGE_KEY);
       if (!accepted) setVisible(true);
     }
   }, []);
 
   function proceed() {
     if (!checked) return;
-    localStorage.setItem(STORAGE_KEY, "1");
+    sessionStorage.setItem(STORAGE_KEY, "1");
     setVisible(false);
   }
 
