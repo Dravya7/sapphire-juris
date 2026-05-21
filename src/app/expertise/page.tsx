@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Scale, Shield, Building2, Users, Home, Lightbulb,
@@ -219,26 +218,6 @@ export default function ExpertisePage() {
                     )}
                   </div>
 
-                  {/* Link */}
-                  <Link
-                    href={area.href}
-                    style={{
-                      fontSize: "0.75rem",
-                      fontWeight: 500,
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      color: "#C9A84C",
-                      textDecoration: "none",
-                      whiteSpace: "nowrap",
-                      marginTop: 4,
-                      opacity: 0.75,
-                      transition: "opacity 0.2s",
-                    }}
-                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.opacity = "1")}
-                    onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.opacity = "0.75")}
-                  >
-                    Learn more →
-                  </Link>
                 </motion.div>
               );
             })}
