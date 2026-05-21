@@ -63,6 +63,17 @@ const PEOPLE = [
     notable:      ["Expertise in Consumer Matters"],
     slug:         "saket-sharma",
   },
+  {
+    name:         "Arjun Kasera",
+    role:         "Associate",
+    education:    "LL.B",
+    experience:   null,
+    portrait:     null,
+    bio:          "Arjun Kasera is an Associate at Sapphire Juris LLP, assisting across the firm's practice areas with research, drafting, and client advisory support. He brings a sharp analytical mind and a commitment to delivering thorough, well-reasoned work on every matter.",
+    focus:        ["Civil Litigation", "Corporate Advisory", "Dispute Resolution"],
+    notable:      [],
+    slug:         "arjun-kasera",
+  },
 ] as const;
 
 export default function PeoplePage() {
