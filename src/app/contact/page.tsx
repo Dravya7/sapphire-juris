@@ -10,12 +10,13 @@ import { motionVariants, viewportOptions } from "@/lib/utils";
 interface FormState {
   name:    string;
   email:   string;
+  ext:     string;
   phone:   string;
   matter:  string;
   message: string;
 }
 
-const INITIAL: FormState = { name: "", email: "", phone: "", matter: "", message: "" };
+const INITIAL: FormState = { name: "", email: "", ext: "+91", phone: "", matter: "", message: "" };
 
 const MATTERS = [
   "Civil Litigation",
@@ -84,7 +85,7 @@ export default function ContactPage() {
       const res = await fetch(FORMSPREE_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, phone: form.phone ? `${form.ext} ${form.phone}` : "" }),
       });
       if (res.ok) {
         setSubmitted(true);
@@ -305,16 +306,41 @@ export default function ContactPage() {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
                   <div>
                     <label htmlFor="phone" style={labelStyle}>Phone</label>
-                    <input
-                      id="phone"
-                      type="tel"
-                      value={form.phone}
-                      onChange={(e) => handleChange("phone", e.target.value)}
-                      onFocus={() => setFocusedField("phone")}
-                      onBlur={() => setFocusedField(null)}
-                      style={getInputStyle("phone")}
-                      placeholder="+91 00000 00000"
-                    />
+                    <div style={{ display: "flex", gap: 0 }}>
+                      <select
+                        value={form.ext}
+                        onChange={(e) => handleChange("ext", e.target.value)}
+                        style={{
+                          ...inputStyle,
+                          width: "auto",
+                          minWidth: 80,
+                          borderRight: "none",
+                          borderRadius: "6px 0 0 6px",
+                          appearance: "none",
+                          cursor: "pointer",
+                          paddingInline: "0.625rem",
+                          flexShrink: 0,
+                          backgroundColor: "rgba(10,21,32,0.95)",
+                        }}
+                      >
+                        <option value="+91">🇮🇳 +91</option>
+                        <option value="+1">🇺🇸 +1</option>
+                        <option value="+44">🇬🇧 +44</option>
+                        <option value="+971">🇦🇪 +971</option>
+                        <option value="+65">🇸🇬 +65</option>
+                        <option value="+61">🇦🇺 +61</option>
+                      </select>
+                      <input
+                        id="phone"
+                        type="tel"
+                        value={form.phone}
+                        onChange={(e) => handleChange("phone", e.target.value)}
+                        onFocus={() => setFocusedField("phone")}
+                        onBlur={() => setFocusedField(null)}
+                        style={{ ...getInputStyle("phone"), borderRadius: "0 6px 6px 0" }}
+                        placeholder="98765 43210"
+                      />
+                    </div>
                   </div>
                   <div>
                     <label htmlFor="matter" style={labelStyle}>Area of Practice</label>
