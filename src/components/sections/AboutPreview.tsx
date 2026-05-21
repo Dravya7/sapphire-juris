@@ -230,7 +230,7 @@ export default function AboutPreview() {
             <div
               className="absolute inset-0 rounded-sm overflow-hidden"
               style={{
-                backgroundImage:    "url('/images/about-preview.jpg')",
+                backgroundImage:    "url('/images/about-bg.jpg')",
                 backgroundSize:     "cover",
                 backgroundPosition: "center",
                 backgroundColor:    "#0A1825",
