@@ -133,13 +133,13 @@ export const practiceAreas = [
 ] as const;
 
 export const firmInfo = {
-  name:          "Sapphire Juris",
+  name:          "Sapphire Juris LLP",
   tagline:       "Where Law Meets Integrity.",
   descriptor:    "Advocates & Legal Consultants",
   established:   "2024",
-  phone:         "+91 731 4567890",
+  phone:         "0731-3161885",
   email:         "contact@sapphirejuris.in",
-  address:       "123, Vijay Nagar, Indore, Madhya Pradesh 452010",
+  address:       "13, Sitabag Colony, Behind Regal Cinema, Nehru Park Road, Indore (M.P.) – 452003",
   officeHours:   "Monday – Saturday: 9:00 AM – 6:00 PM",
   advocates: [
     {

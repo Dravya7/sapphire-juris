@@ -18,7 +18,7 @@ function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <Link
       href="/"
-      aria-label="Sapphire Juris — Home"
+      aria-label="Sapphire Juris LLP — Home"
       style={{ display: "flex", alignItems: "center", gap: "0.75rem", textDecoration: "none" }}
       className="shrink-0 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9A84C] focus-visible:rounded-sm"
     >
@@ -40,7 +40,7 @@ function Logo({ compact = false }: { compact?: boolean }) {
           transition:    "font-size 0.35s cubic-bezier(0.25,0.1,0.25,1)",
         }}
       >
-        Sapphire Juris
+        Sapphire Juris LLP
       </span>
 
       {/* Vertical divider — hidden on small mobile */}

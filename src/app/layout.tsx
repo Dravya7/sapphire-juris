@@ -23,8 +23,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default:  "Sapphire Juris® — Advocates & Legal Consultants",
-    template: "%s | Sapphire Juris®",
+    default:  "Sapphire Juris LLP® — Advocates & Legal Consultants",
+    template: "%s | Sapphire Juris LLP®",
   },
   description: "Premium law firm in Indore, Madhya Pradesh. Where Law Meets Integrity.",
 };

@@ -56,11 +56,11 @@ export default function Footer() {
             <Link
               href="/"
               style={{ display: "inline-flex", alignItems: "center", gap: "0.625rem", marginBottom: "1.25rem", textDecoration: "none" }}
-              aria-label="Sapphire Juris — Home"
+              aria-label="Sapphire Juris LLP — Home"
             >
               <LogoMark size={42} />
               <span style={{ fontFamily: "var(--font-cormorant)", fontWeight: 700, fontSize: "1.125rem", letterSpacing: "0.05em", textTransform: "uppercase", color: "#F5F0E8" }}>
-                Sapphire Juris<sup style={{ fontSize: "0.45em", color: "#C9A84C", marginLeft: "1px" }}>®</sup>
+                Sapphire Juris LLP<sup style={{ fontSize: "0.45em", color: "#C9A84C", marginLeft: "1px" }}>®</sup>
               </span>
             </Link>
 
@@ -313,7 +313,7 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: "0.75rem", color: "#2A3F55", margin: 0 }}>
-            {`© ${YEAR} Sapphire Juris®. All rights reserved. · Advocates & Legal Consultants, Indore, M.P.`}
+            {`© ${YEAR} Sapphire Juris LLP®. All rights reserved. · Advocates & Legal Consultants, Indore, M.P.`}
           </p>
           <p style={{ fontSize: "0.75rem", color: "#2A3F55", margin: 0 }}>
             Not a solicitation of legal advice · Confidential consultations available

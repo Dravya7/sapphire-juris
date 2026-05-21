@@ -208,7 +208,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      aria-label="Sapphire Juris — Advocates & Legal Consultants"
+      aria-label="Sapphire Juris LLP — Advocates & Legal Consultants"
       className="relative w-full overflow-hidden"
       style={{ minHeight: "100svh", marginTop: "-76px" }}
     >
@@ -252,7 +252,7 @@ export function Hero() {
               color:         "#F5F0E8",
             }}
           >
-            Sapphire Juris
+            Sapphire Juris LLP
           </span>
         </motion.h1>
 
