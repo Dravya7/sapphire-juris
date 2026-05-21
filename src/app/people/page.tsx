@@ -46,7 +46,7 @@ const PEOPLE = [
     role:         "Senior Associate",
     education:    "LL.B",
     experience:   null,
-    portrait:     null,
+    portrait:     "/images/shashank-singh.jpg",
     bio:          "Adv. Shashank Singh is a Senior Associate enrolled with the Supreme Court of India. He has served as Panel Counsel and Senior Panel Counsel for the Government of India before the Delhi High Court, bringing the rigour of constitutional and administrative law practice to the firm.",
     focus:        ["Constitutional Law", "Administrative Law", "Civil Litigation", "Criminal Defense"],
     notable:      ["Advocate — Supreme Court of India", "Panel Counsel — Government of India", "Sr. Panel Counsel — Govt. of India, Delhi High Court"],
