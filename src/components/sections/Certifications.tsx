@@ -13,7 +13,7 @@ const CERT = {
   since:       "23 May 2026",
   validUntil:  "22 May 2029",
   scope:       "Provision of Legal Advisory, Advocacy, Litigation Management and Corporate Legal Consultancy Services",
-  verifyUrl:   "https://www.globalstds.in",
+  verifyUrl:   "/iso-certificate.pdf",
 } as const;
 
 const DETAILS = [
