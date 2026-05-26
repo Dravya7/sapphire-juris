@@ -173,9 +173,8 @@ export default function PracticeAreas() {
               const Icon = ICON_MAP[area.icon] ?? Scale;
               const desc = DESCRIPTIONS[area.label] ?? "";
               return (
-                <Link
+                <div
                   key={area.href}
-                  href={area.href}
                   style={{
                     flexShrink:      0,
                     width:           itemWidth,
@@ -185,7 +184,6 @@ export default function PracticeAreas() {
                     padding:         "1.75rem 1.5rem",
                     border:          "1px solid rgba(201,168,76,0.12)",
                     borderRadius:    8,
-                    textDecoration:  "none",
                     backgroundColor: "rgba(10,21,32,0.6)",
                     transition:      "border-color 0.3s, background-color 0.3s",
                   }}
@@ -235,7 +233,7 @@ export default function PracticeAreas() {
                   >
                     {desc}
                   </span>
-                </Link>
+                </div>
               );
             })}
           </motion.div>
