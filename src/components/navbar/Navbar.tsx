@@ -223,10 +223,9 @@ function MegaMenu({ isOpen }: { isOpen: boolean }) {
                 <ul className="space-y-0.5">
                   {col1.map((area) => (
                     <li key={area.label}>
-                      <Link
-                        href={area.href}
+                      <span
                         className="group flex items-center gap-0 py-[0.4rem] transition-colors duration-150"
-                        style={{ fontFamily: "var(--font-dm-sans)", fontSize: "0.8125rem", color: "rgba(212,197,160,0.65)" }}
+                        style={{ fontFamily: "var(--font-dm-sans)", fontSize: "0.8125rem", color: "rgba(212,197,160,0.65)", cursor: "default", display: "flex" }}
                         onMouseEnter={(e) => { e.currentTarget.style.color = "#D4C5A0"; }}
                         onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(212,197,160,0.65)"; }}
                       >
@@ -241,7 +240,7 @@ function MegaMenu({ isOpen }: { isOpen: boolean }) {
                           }}
                         />
                         {area.label}
-                      </Link>
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -251,10 +250,9 @@ function MegaMenu({ isOpen }: { isOpen: boolean }) {
                 <ul className="space-y-0.5">
                   {col2.map((area) => (
                     <li key={area.label}>
-                      <Link
-                        href={area.href}
+                      <span
                         className="group flex items-center py-[0.4rem] transition-colors duration-150"
-                        style={{ fontFamily: "var(--font-dm-sans)", fontSize: "0.8125rem", color: "rgba(212,197,160,0.65)" }}
+                        style={{ fontFamily: "var(--font-dm-sans)", fontSize: "0.8125rem", color: "rgba(212,197,160,0.65)", cursor: "default", display: "flex" }}
                         onMouseEnter={(e) => { e.currentTarget.style.color = "#D4C5A0"; }}
                         onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(212,197,160,0.65)"; }}
                       >
@@ -269,7 +267,7 @@ function MegaMenu({ isOpen }: { isOpen: boolean }) {
                           }}
                         />
                         {area.label}
-                      </Link>
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -396,15 +394,13 @@ function MobileMenu({ isOpen, onClose, currentPath }: { isOpen: boolean; onClose
                             >
                               {practiceAreas.map((area) => (
                                 <li key={area.label}>
-                                  <Link
-                                    href={area.href}
-                                    onClick={onClose}
-                                    style={{ display: "block", padding: "0.5rem 0", fontFamily: "var(--font-dm-sans)", fontSize: "0.8125rem", color: "rgba(122,143,166,0.85)" }}
+                                  <span
+                                    style={{ display: "block", padding: "0.5rem 0", fontFamily: "var(--font-dm-sans)", fontSize: "0.8125rem", color: "rgba(122,143,166,0.85)", cursor: "default" }}
                                     onMouseEnter={(e) => { e.currentTarget.style.color = "#C9A84C"; }}
                                     onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(122,143,166,0.85)"; }}
                                   >
                                     {area.label}
-                                  </Link>
+                                  </span>
                                 </li>
                               ))}
                             </motion.ul>
