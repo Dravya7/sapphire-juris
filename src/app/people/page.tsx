@@ -35,7 +35,7 @@ const PEOPLE = [
     role:         "Senior Associate",
     education:    "LL.B",
     experience:   null,
-    portrait:     null,
+    portrait:     "/images/rishi-sharma.jpg",
     bio:          "Adv. Rishi Sharma is a Senior Associate with a strong focus on commercial transactions, real estate law, and cross-border advisory. He serves as Legal Advisor to Sarthak Singapore Group and Drushika Real Estate, bringing a commercially astute perspective to every mandate he handles.",
     focus:        ["Real Estate", "Commercial Transactions", "Civil Litigation", "Corporate Advisory"],
     notable:      ["Legal Advisor — Sarthak Singapore Group", "Legal Advisor — Drushika Real Estate"],
