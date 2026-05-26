@@ -225,12 +225,13 @@ export default function Certifications() {
                 overflow:            "hidden",
               }}
             >
-              {DETAILS.map((d) => (
+              {DETAILS.map((d, i) => (
                 <div
                   key={d.label}
                   style={{
                     padding:         "1.125rem 1.25rem",
                     backgroundColor: "rgba(8,19,30,0.9)",
+                    gridColumn:      i === DETAILS.length - 1 && DETAILS.length % 2 !== 0 ? "span 2" : undefined,
                   }}
                 >
                   <p
