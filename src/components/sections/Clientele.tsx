@@ -63,19 +63,17 @@ const LOOP = [...CLIENTS, ...CLIENTS];
 function ClientCard({ client }: { client: Client }) {
   return (
     <div
-      className="group"
+      className="clientele-card"
       style={{
-        flex:            "0 0 auto",
-        width:           "clamp(200px, 22vw, 260px)",
-        border:          "1px solid rgba(201,168,76,0.1)",
-        borderRadius:    6,
-        backgroundColor: "rgba(13,27,42,0.5)",
-        padding:         "1.75rem 1.5rem",
-        display:         "flex",
-        flexDirection:   "column",
-        alignItems:      "center",
-        textAlign:       "center",
-        transition:      "border-color 0.25s, background-color 0.25s",
+        flex:          "0 0 auto",
+        width:         "clamp(200px, 22vw, 260px)",
+        border:        "1px solid",
+        borderRadius:  6,
+        padding:       "1.75rem 1.5rem",
+        display:       "flex",
+        flexDirection: "column",
+        alignItems:    "center",
+        textAlign:     "center",
       }}
     >
       {/* Logo */}
