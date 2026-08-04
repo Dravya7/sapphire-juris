@@ -138,7 +138,7 @@ export const firmInfo = {
   descriptor:    "Advocates & Legal Consultants",
   established:   "2024",
   phone:         "0731-3161885",
-  email:         "contact@sapphirejuris.in",
+  email:         "sapphirejuris@gmail.com",
   address:       "13, Sitabag Colony, Behind Regal Cinema, Nehru Park Road, Indore (M.P.) – 452003",
   officeHours:   "Monday – Saturday: 9:00 AM – 6:00 PM",
   advocates: [
