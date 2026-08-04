@@ -554,6 +554,191 @@ export default function AboutPreview() {
           </div>
         </motion.div>
 
+        {/* ── Managing Partner's Note ── */}
+        <motion.div
+          initial={reduced ? {} : { opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: EXPO }}
+          style={{
+            marginTop:       "clamp(2.5rem, 4vw, 3.5rem)",
+            border:          "1px solid rgba(201,168,76,0.12)",
+            borderRadius:    "4px",
+            backgroundColor: "rgba(10,21,32,0.55)",
+            overflow:        "hidden",
+          }}
+        >
+          <div
+            className="grid"
+            style={{
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))",
+            }}
+          >
+            {/* Note content (left) */}
+            <div style={{ padding: "clamp(2rem, 4vw, 3.5rem)" }}>
+              {/* Eyebrow */}
+              <p
+                style={{
+                  fontFamily:    "var(--font-dm-sans)",
+                  fontSize:      "0.6rem",
+                  fontWeight:    500,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color:         "#C9A84C",
+                  marginBottom:  "1rem",
+                }}
+              >
+                From The Managing Partner
+              </p>
+
+              {/* Heading */}
+              <h3
+                style={{
+                  fontFamily:    "var(--font-cormorant)",
+                  fontWeight:    600,
+                  fontSize:      "clamp(1.5rem, 2.5vw, 2rem)",
+                  color:         "#F5F0E8",
+                  lineHeight:    1.15,
+                  marginBottom:  "0.75rem",
+                }}
+              >
+                A Note from the Managing Partner
+              </h3>
+
+              {/* Gold accent line */}
+              <div
+                style={{
+                  width:           "3rem",
+                  height:          2,
+                  backgroundColor: "#C9A84C",
+                  marginBottom:    "1.75rem",
+                }}
+              />
+
+              <p
+                style={{
+                  fontFamily:   "var(--font-dm-sans)",
+                  fontSize:     "clamp(0.875rem, 1.2vw, 0.9375rem)",
+                  lineHeight:   1.85,
+                  color:        "rgba(122,143,166,0.9)",
+                  marginBottom: "1.25rem",
+                }}
+              >
+                SAPPHIRE JURIS was founded with a simple yet ambitious vision
+                — to create a legal polyclinic where every legal service is
+                available under one roof. We envisioned a firm that brings
+                together experienced professionals across diverse areas of
+                law, ensuring that every client receives comprehensive,
+                practical, and solution-oriented legal assistance.
+              </p>
+              <p
+                style={{
+                  fontFamily:   "var(--font-dm-sans)",
+                  fontSize:     "clamp(0.875rem, 1.2vw, 0.9375rem)",
+                  lineHeight:   1.85,
+                  color:        "rgba(122,143,166,0.82)",
+                  marginBottom: "1.25rem",
+                }}
+              >
+                As Managing Partner, I believe that the practice of law
+                extends beyond resolving disputes; it is about building
+                lasting relationships founded on trust, accessibility, and
+                excellence. Every matter entrusted to our firm is handled
+                with integrity, dedication, and a commitment to achieving
+                the best possible outcome.
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-dm-sans)",
+                  fontSize:   "clamp(0.875rem, 1.2vw, 0.9375rem)",
+                  lineHeight: 1.85,
+                  color:      "rgba(122,143,166,0.75)",
+                }}
+              >
+                At Sapphire Juris, we are committed to delivering legal
+                services that are professional, responsive, and
+                client-centric. It is our privilege to serve our clients and
+                be a trusted partner in protecting their rights and
+                interests.
+              </p>
+
+              {/* Signature block */}
+              <div
+                style={{
+                  marginTop:   "2rem",
+                  paddingTop:  "1.5rem",
+                  borderTop:   "1px solid rgba(201,168,76,0.1)",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily:    "var(--font-cormorant)",
+                    fontSize:      "1.375rem",
+                    fontWeight:    500,
+                    color:         "#D4C5A0",
+                    lineHeight:    1.2,
+                    marginBottom:  "0.25rem",
+                  }}
+                >
+                  Adv. Atharva Vyas
+                </p>
+                <p
+                  style={{
+                    fontFamily:    "var(--font-dm-sans)",
+                    fontSize:      "0.6875rem",
+                    fontWeight:    400,
+                    color:         "rgba(201,168,76,0.7)",
+                    marginBottom:  "0.25rem",
+                  }}
+                >
+                  B.A. LL.B. (Hons.), LL.M.
+                </p>
+                <p
+                  style={{
+                    fontFamily:    "var(--font-dm-sans)",
+                    fontSize:      "0.6rem",
+                    fontWeight:    400,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color:         "rgba(201,168,76,0.4)",
+                  }}
+                >
+                  Managing Partner — Sapphire Juris LLP
+                </p>
+              </div>
+            </div>
+
+            {/* Managing Partner portrait (right) */}
+            <div
+              style={{
+                position:   "relative",
+                minHeight:  "clamp(320px, 45vw, 520px)",
+                borderLeft: "1px solid rgba(201,168,76,0.08)",
+                overflow:   "hidden",
+              }}
+            >
+              <div
+                style={{
+                  position:           "absolute",
+                  inset:              0,
+                  backgroundImage:    "url('/images/atharva-vyas.jpg')",
+                  backgroundSize:     "cover",
+                  backgroundPosition: "center top",
+                }}
+              />
+              {/* Subtle bottom gradient for blending */}
+              <div
+                aria-hidden="true"
+                style={{
+                  position:   "absolute",
+                  inset:      0,
+                  background: "linear-gradient(to top, rgba(7,17,30,0.45) 0%, transparent 55%)",
+                }}
+              />
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
