@@ -91,7 +91,7 @@ export default function PeoplePage() {
           padding: "clamp(5rem, 10vw, 9rem) clamp(1.5rem, 5vw, 5rem)",
         }}
       >
-        <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", flexDirection: "column", gap: "5rem" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", flexDirection: "column", gap: "clamp(3rem, 6vw, 4rem)" }}>
           {PEOPLE.map((person, i) => (
             <motion.div
               key={person.slug}
@@ -102,8 +102,8 @@ export default function PeoplePage() {
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))",
-                gap: "clamp(2.5rem, 5vw, 5rem)",
-                alignItems: "start",
+                gap: "clamp(2.5rem, 5vw, 4rem)",
+                alignItems: "center",
               }}
             >
               {/* Portrait */}
