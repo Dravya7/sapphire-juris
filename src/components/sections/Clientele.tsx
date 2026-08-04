@@ -92,15 +92,10 @@ function ClientCard({ client }: { client: Client }) {
           src={client.logo}
           alt={`${client.name} logo`}
           style={{
-            maxHeight:  "100%",
-            maxWidth:   "100%",
-            objectFit:  "contain",
-            filter:     "grayscale(1) brightness(1.6) opacity(0.7)",
-            transition: "filter 0.3s",
+            maxHeight: "100%",
+            maxWidth:  "100%",
+            objectFit: "contain",
           }}
-          className="group-hover:grayscale-0 group-hover:opacity-100"
-          onMouseEnter={(e) => { (e.currentTarget as HTMLImageElement).style.filter = "grayscale(0) opacity(1)"; }}
-          onMouseLeave={(e) => { (e.currentTarget as HTMLImageElement).style.filter = "grayscale(1) brightness(1.6) opacity(0.7)"; }}
         />
       </div>
 
