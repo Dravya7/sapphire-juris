@@ -228,7 +228,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.05, ease: [...EXPO] }}
           aria-hidden="true"
         >
-          <LogoMark size={90} />
+          <LogoMark size={112} />
         </motion.div>
 
         {/* Firm name */}
@@ -245,11 +245,12 @@ export function Hero() {
               display:       "block",
               fontFamily:    "var(--font-cormorant)",
               fontWeight:    700,
-              fontSize:      "clamp(2.8rem, 8vw, 6.5rem)",
+              fontSize:      "clamp(2.2rem, 7vw, 6.5rem)",
               lineHeight:    1.0,
-              letterSpacing: "0.1em",
+              letterSpacing: "0.08em",
               textTransform: "uppercase",
               color:         "#F5F0E8",
+              whiteSpace:    "nowrap",
             }}
           >
             Sapphire Juris LLP
