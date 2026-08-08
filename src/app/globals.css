@@ -387,10 +387,9 @@ body {
 
   /* Hero firm name — prevent overflow on very small screens */
   .hero-firm-name {
-    font-size: clamp(2.2rem, 12vw, 3rem) !important;
-    letter-spacing: 0.06em !important;
+    font-size: clamp(1.4rem, 6.5vw, 2.4rem) !important;
+    letter-spacing: 0.04em !important;
   }
-
   /* Section headings — tighten on mobile */
   .text-display-xl {
     font-size: clamp(1.85rem, 8vw, 2.5rem);
