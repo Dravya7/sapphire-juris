@@ -251,7 +251,7 @@ export default function ContactPage() {
               <form
                 onSubmit={handleSubmit}
                 style={{
-                  padding: "2.5rem",
+                  padding: "clamp(1.5rem, 5vw, 2.5rem)",
                   border: "1px solid rgba(201,168,76,0.15)",
                   borderRadius: 8,
                   backgroundColor: "rgba(10,21,32,0.4)",
@@ -272,7 +272,7 @@ export default function ContactPage() {
                   Consultation Request
                 </p>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: "1.25rem" }}>
                   <div>
                     <label htmlFor="name" style={labelStyle}>Full Name *</label>
                     <input
@@ -303,7 +303,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: "1.25rem" }}>
                   <div>
                     <label htmlFor="phone" style={labelStyle}>Phone</label>
                     <div style={{ display: "flex", gap: 0 }}>
