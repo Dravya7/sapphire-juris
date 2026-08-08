@@ -233,8 +233,8 @@ export function Hero() {
 
         {/* Firm name */}
         <motion.h1
-          className="mx-auto"
-          style={{ maxWidth: "clamp(20rem, 90vw, 960px)", marginBottom: "1.25rem" }}
+          className="mx-auto text-center"
+          style={{ maxWidth: "96vw", marginBottom: "1.25rem" }}
           initial={reduced ? {} : { opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1, ease: [...EXPO] }}
@@ -245,9 +245,9 @@ export function Hero() {
               display:       "block",
               fontFamily:    "var(--font-cormorant)",
               fontWeight:    700,
-              fontSize:      "clamp(2.2rem, 7vw, 6.5rem)",
+              fontSize:      "clamp(2.2rem, 5.5vw, 5.5rem)",
               lineHeight:    1.0,
-              letterSpacing: "0.08em",
+              letterSpacing: "0.06em",
               textTransform: "uppercase",
               color:         "#F5F0E8",
               whiteSpace:    "nowrap",
