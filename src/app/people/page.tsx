@@ -7,7 +7,20 @@ import { PageHero } from "@/components/ui/PageHero";
 import { motionVariants, viewportOptions } from "@/lib/utils";
 import ContactCTA from "@/components/sections/ContactCTA";
 
-const PEOPLE = [
+interface Person {
+  name:       string;
+  role:       string;
+  education:  string;
+  experience: string | null;
+  portrait:   string | null;
+  bio:        string;
+  focus:      string[];
+  notable:    string[];
+  slug:       string;
+}
+
+const PEOPLE: Person[] = [
+
   {
     name:         "Dr. Saket Vyas",
     role:         "Designated Partner",
@@ -52,12 +65,12 @@ const PEOPLE = [
     notable:      ["Advocate — Supreme Court of India", "Panel Counsel — Government of India", "Sr. Panel Counsel — Govt. of India, Delhi High Court"],
     slug:         "shashank-singh",
   },
-  {
+{
     name:         "Adv. Saket Sharma",
     role:         "Junior Associate",
     education:    "LL.B",
     experience:   null,
-    portrait:     null,
+    portrait:     "/images/saket-sharma.jpg",
     bio:          "Adv. Saket Sharma is a Junior Associate whose practice is focused on consumer protection law. He brings diligence and client-first attention to consumer disputes, ensuring that individual and commercial clients receive effective representation before consumer forums.",
     focus:        ["Consumer Law", "Civil Litigation", "Dispute Resolution"],
     notable:      ["Expertise in Consumer Matters"],
@@ -74,7 +87,7 @@ const PEOPLE = [
     notable:      [],
     slug:         "arjun-kasera",
   },
-] as const;
+];
 
 export default function PeoplePage() {
   return (
